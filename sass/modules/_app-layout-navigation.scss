@@ -1,0 +1,70 @@
+
+#navigation {
+	width:180px;
+	height:700px; // Arreglar cuanto antes, solo para pruebas
+	background: $darkblue-medium;
+	position:fixed;
+	z-index: 50;
+	margin-top:55px;
+	color: $lightblue-bold;
+	list-style: none;
+	font-size:emCalc(12px);
+	}
+
+	#main-menu {
+		line-height:emCalc(65px);
+		border-bottom: solid 1px #424a68;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		}
+
+	#main-menu a {
+		color: $lightblue-bold;
+		display:block;
+		border-top: solid 1px #424a68;
+		border-bottom: solid 1px $darkblue-bold;
+		}
+
+	#main-menu a:hover {
+		color: $lightblue-bold;
+		display:block;
+		border-top: solid 1px #424a68;
+		border-bottom: solid 1px $darkblue-bold;
+		background: $darkblue-regular;
+		}
+
+/*------------------- ICONS --------------------*/
+
+	.icon {
+		width:30px;
+		height:30px;
+		float: left;
+		margin:emCalc(10px) emCalc(20px);
+		background-image:url("../img/icons.png");
+		}
+
+	.overview {
+		background-position:0px 0px;
+		}
+
+	.statistics {
+		background-position:-30px 0px;
+		}
+
+	.queue {
+		background-position:-60px 0px;
+		}
+
+/*------------------- ACTIVE ITEM --------------------*/
+
+	.active {
+		@include background(image-url("../img/arrow-active.png") right center no-repeat,
+			linear-gradient(top, 
+			$color-nav-active-start, 
+			$color-nav-active-end));
+		}
+
+	#main-menu .active a:hover {
+		@include background(image-url("../img/arrow-active.png") right center no-repeat);
+		}

@@ -1,0 +1,82 @@
+
+.content-item {
+	width:emCalc(290px);
+	height:emCalc(430px);
+	margin: emCalc(10px) emCalc(10px);
+	float:left;
+	margin-bottom: emCalc(20px);
+	border:solid 1px white;
+	@include box-shadow($shadow-item 0 0 2px);
+	@include background(linear-gradient(top, 
+		$color-content-item-start, 
+		$color-content-item-middle1, 
+		$color-content-item-middle2, 
+		$color-content-item-end));
+	}
+
+	.content-item-label {
+		width: emCalc(110px);
+		height: emCalc(20px);
+		display: block;
+		position: relative;
+		margin-bottom: emCalc(-20px);
+		padding-left: emCalc(10px);
+		color: white;
+		line-height: emCalc(16px);
+		background: $darkblue-medium; 
+		}
+
+	.content-item-summary {
+		height: emCalc(200px);
+		padding: emCalc(20px) emCalc(25px);
+		}
+
+	.content-item-summary small {
+		color: $color-content-item-small;
+		}
+
+	.content-item-summary h3 {
+		color: $blue;
+		line-height: emCalc(20px);
+		margin: emCalc(5px) 0;
+		}
+
+	.content-item-summary p {
+		font-size: 75%;
+		line-height: emCalc(22px);
+		}
+
+	.content-item-audience {
+		height: emCalc(35px);
+		padding: emCalc(15px);
+		color: $color-content-item-small;
+		border-bottom: solid 1px #bfcde2;	
+		}
+
+	.content-item-footer {
+		height: emCalc(50px);
+		padding: emCalc(10px);
+		border-top: solid 1px #fff;	
+		}
+
+		.content-item-source  img {
+			margin-right: emCalc(8px);
+			}
+
+		.content-item-btn {
+			width: emCalc(120px);
+			height: emCalc(30px);
+			line-height: emCalc(22px);
+			float: right;
+			text-align: center;
+			border: solid 1px #bfcde2;
+			@include border-radius(emCalc(12px));	
+			@include background(linear-gradient(top, 
+				$color-content-header-start, 
+				$color-content-header-middle, 
+				$color-content-header-end));
+			}
+
+		.content-item-btn a {
+			color: $color-content-item-small;
+			}

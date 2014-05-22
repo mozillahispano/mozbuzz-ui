@@ -1,0 +1,45 @@
+
+#content-area {
+	margin-left:emCalc(180px);
+	margin-top:emCalc(50px);
+	overflow:hidden;
+	}
+
+	#content {
+		width:emCalc(940px); 
+		margin: 15px auto;
+		background: $lightblue-regular;
+		overflow:auto;
+		@include box-shadow(#556595 0 0 5px);
+		}
+
+		#content-header {
+			width:emCalc(940px);
+			height: emCalc(45px);
+			@include background(linear-gradient(top, 
+				$color-content-header-start, 
+				$color-content-header-middle, 
+				$color-content-header-end));
+			}
+
+		#content-header h2 {
+			font-weight:bold;
+			font-size: emCalc(14px);
+			line-height: emCalc(50px);
+			display: inline;
+			}
+
+		.content-header-icon {
+			width:30px;
+			height:30px;
+			float: left;
+			margin:emCalc(5px) emCalc(5px);
+			background-image:url("../img/icons.png");
+			background-position:0px -30px;
+			}
+
+		#content-list {
+			width:emCalc(930px);
+			margin: 0 auto 0 auto;
+			padding-top: emCalc(5px);
+			}
